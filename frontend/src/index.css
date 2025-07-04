@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Color Variables */
+:root {
+  --color-primary: #f76600;
+  --color-secondary: #ff6b35;
+  --color-dark: #1d1d1f;
+  --color-gray: #6e6e6e;
+  --color-light: #fafafa;
+  --color-soft-gray:#848488;
+}
+
+
+
+@font-face {
+  font-family: 'DegularDisplay';
+  src: url('./../public/DegularDisplay-Semibold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InstrumentSerifItalic';
+  src: url('/fonts/InstrumentSerif-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'DegularDisplay', sans-serif;
+}
+
