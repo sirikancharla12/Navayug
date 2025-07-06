@@ -9,11 +9,12 @@ export default function AboutUsSection() {
       <div className="flex flex-col md:flex-row gap-12 items-center md:items-start max-w-7xl mx-auto">
         <div className="w-full md:w-[35%] flex flex-col items-center md:items-start text-center md:text-left">
           <SectionHeader title="About us" />
-          <img
-            src="/about.png"
-            alt="About graphic"
-            className="mt-6 w-3/4 md:w-full max-w-xs md:max-w-none h-auto object-contain"
-          />
+        <img
+  src="/about.png"
+  alt="About graphic"
+  className="mt-6 w-2/3 md:w-[80%] max-w-[250px] h-auto object-contain"
+/>
+
         </div>
 
         {/* Text Content */}

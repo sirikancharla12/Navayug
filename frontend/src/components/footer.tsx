@@ -19,19 +19,24 @@ export default function Footer() {
             We Turn Ideas Into Impact. Let’s Build Something Amazing Together.
           </p>
 
-          <div className="flex items-center gap-4 text-[--color-soft-gray] mt-4">
-            <a href="#" aria-label="Facebook" className="hover:text-black">
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-black">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="#" aria-label="Instagram" className="hover:text-black">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <img src="/behance.svg" alt="Behance" className="w-5 h-5" />
-            <img src="/dribbble.svg" alt="Dribbble" className="w-5 h-5" />
-          </div>
+        <div className="flex items-center gap-4 mt-4">
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <img src="/s1.png" alt="Facebook" className="w-6 h-6 hover:opacity-80 transition" />
+  </a>
+  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+    <img src="/s2.png" alt="LinkedIn" className="w-6 h-6 hover:opacity-80 transition" />
+  </a>
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <img src="/s3.png" alt="Instagram" className="w-6 h-6 hover:opacity-80 transition" />
+  </a>
+  <a href="https://behance.net" target="_blank" rel="noopener noreferrer">
+    <img src="/s4.png" alt="Behance" className="w-6 h-6 hover:opacity-80 transition" />
+  </a>
+  <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">
+    <img src="/s5.png" alt="Dribbble" className="w-6 h-6 hover:opacity-80 transition" />
+  </a>
+</div>
+
 
           <div className="mt-4">
             <ConnectButton label="LET'S CONNECT" to="/" />
