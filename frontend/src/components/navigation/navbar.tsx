@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white px-6 lg:px-12 py-4 shadow-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white px-6 lg:px-12 py-4 ">
       <div className="flex items-center justify-between">
   <div className="h-10 md:h-12 lg:h-14 flex items-center">
   <img
