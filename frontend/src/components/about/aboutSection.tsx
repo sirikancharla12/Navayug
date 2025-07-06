@@ -1,27 +1,34 @@
+
 import React from "react";
-import SectionHeader from "./sectionHeader";
-import ConnectButton from "./connectButton";
+import SectionHeader from "../sectionHeader";
+import ConnectButton from "../connectButton";
 
 export default function AboutUsSection() {
   return (
     <section className="px-6 md:px-10 lg:px-16 py-20">
-      <div className="flex flex-col md:flex-row gap-10 items-start">
-        <div className="basis-[30%]">
+      <div className="flex flex-col md:flex-row gap-12 items-center md:items-start max-w-7xl mx-auto">
+        <div className="w-full md:w-[35%] flex flex-col items-center md:items-start text-center md:text-left">
           <SectionHeader title="About us" />
           <img
-            src="/about-graphic.png"
+            src="/about.png"
             alt="About graphic"
-            className="mt-6 w-full max-w-sm md:max-w-full"
+            className="mt-6 w-3/4 md:w-full max-w-xs md:max-w-none h-auto object-contain"
           />
         </div>
 
-        <div className="basis-[70%]">
+        {/* Text Content */}
+        <div className="w-full md:w-[65%]">
           <p className="text-2xl lg:text-3xl font-medium text-[var(--color-dark)] leading-snug tracking-tight">
             NAVAYUG specializes in strategic digital solutions—from brand identity to
             performance–driven web development. We fuse{" "}
-            <span className="font-[InstrumentSerifItalic] italic text-[var(--color-secondary)] font-medium ">design, technology,</span> and{" "}
-            <span className="font-[InstrumentSerifItalic] italic text-[var(--color-secondary)] font-medium">marketing</span> into seamless
-            experiences that cut through the digital noise and deliver measurable results.
+            <span className="font-[InstrumentSerifItalic] italic text-[var(--color-secondary)] font-medium">
+              design, technology,
+            </span>{" "}
+            and{" "}
+            <span className="font-[InstrumentSerifItalic] italic text-[var(--color-secondary)] font-medium">
+              marketing
+            </span>{" "}
+            into seamless experiences that cut through the digital noise and deliver measurable results.
           </p>
 
           <p className="mt-6 text-xl lg:text-2xl text-[var(--color-soft-gray)] leading-snug font-medium">

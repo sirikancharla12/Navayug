@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
-import ConnectButton from "./connectButton";
+import ConnectButton from "../connectButton";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

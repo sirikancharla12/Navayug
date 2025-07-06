@@ -1,4 +1,3 @@
-import React from "react";
 
 const SectionHeader = ({ title = "Section Title", circleColor = "#6e6e6e" }) => {
   return (
