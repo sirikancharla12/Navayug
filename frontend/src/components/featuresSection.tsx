@@ -2,7 +2,6 @@
 
 import SectionHeader from "../ui/sectionHeader";
 import ConnectButton from "../ui/connectButton";
-import Component from "./worksSection";
 import FeatureCards from "../ui/featuresCard";
 
 

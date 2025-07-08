@@ -2,7 +2,6 @@ import Approach from "../components/About/Approach";
 import CoreValuesSection from "../components/About/CoreValues";
 import HeroSectionAbout from "../components/About/Hero";
 import OurStorySection from "../components/About/OurStory";
-import HeroSection from "../components/heroSection";
 import DottedLine from "../ui/dottedline";
 
 export default function About() {

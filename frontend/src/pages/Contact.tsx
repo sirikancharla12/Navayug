@@ -8,7 +8,6 @@ export default function Contact(){
                 <p className="text-base lg:text-xl font-text text-[var(--color-soft-gray)] leading-relaxed mb-8">
                     We would love to hear from you! Please fill out the form below to get in touch.
                 </p>
-                {/* Add your contact form or content here */}
             </div>
         </section>
     )

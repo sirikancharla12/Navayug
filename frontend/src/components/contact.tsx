@@ -111,10 +111,13 @@ export default function ContactForm() {
 
               <div className="pt-2">
   <button
-      onClick={() => console.log("Button clicked")}
-      className="flex items-center justify-between px-4 py-2 bg-gray-100 rounded-full shadow-sm hover:shadow-md transition-shadow duration-200"
+      type="submit"
+      disabled={isSubmitting}
+      className={`flex items-center justify-between px-4 py-2 bg-gray-100 rounded-full shadow-sm hover:shadow-md transition-shadow duration-200 ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""}`}
     >
-        <span className="text-base font-semibold text-black">SEND MESSAGE </span>
+        <span className="text-base font-semibold text-black">
+          {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
+        </span>
 
       <span className="ml-4 flex items-center justify-center w-8 h-8 rounded-full bg-orange-500 text-white shadow-md">
         <ArrowRight className="w-4 h-4" />
