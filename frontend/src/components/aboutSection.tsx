@@ -1,7 +1,6 @@
 
-import React from "react";
-import SectionHeader from "../sectionHeader";
-import ConnectButton from "../connectButton";
+import SectionHeader from "../ui/sectionHeader";
+import ConnectButton from "../ui/connectButton";
 
 export default function AboutUsSection() {
   return (

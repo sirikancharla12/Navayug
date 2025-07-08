@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
-import ConnectButton from "./connectButton";
+import ConnectButton from "../ui/connectButton";
 
 export default function Footer() {
   return (

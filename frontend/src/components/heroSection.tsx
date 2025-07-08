@@ -1,6 +1,6 @@
 
 
-import ConnectButton from "./connectButton";
+import ConnectButton from "../ui/connectButton";
 
 export default function HeroSection() {
   return (

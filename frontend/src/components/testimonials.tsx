@@ -1,7 +1,7 @@
 
 
-import testimonialsData from "../../constants/utils/testimonial.json"
-import SectionHeader from "../sectionHeader"
+import testimonialsData from "../data/testimonial.json"
+import SectionHeader from "../ui/sectionHeader"
 
 interface Testimonial {
   id: string
@@ -50,7 +50,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   )
 }
 
-export default function ScrollingTestimonials() {
+export default function Testimonials() {
   const testimonials: Testimonial[] = testimonialsData.testimonials
   const duplicatedTestimonials = [...testimonials, ...testimonials]
 
@@ -59,10 +59,10 @@ export default function ScrollingTestimonials() {
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10">
         <div className="flex-1">
           <SectionHeader title="Testimonials" />
-          <h2 className="text-3xl lg:text-4xl font-display font-semibold text-[var(--color-dark)] mt-2 leading-tight tracking-tight">
+          <h2 className="text-xl lg:text-3xl font-display font-semibold text-[var(--color-dark)] mt-2 leading-tight tracking-tight">
             Trusted By Brands That Demand Results
           </h2>
-          <p className="mt-2 text-base lg:text-2xl font-text text-[var(--color-soft-gray)] tracking-tight leading-snug font-medium">
+          <p className="mt-2 text-base lg:text-xl font-text text-[var(--color-soft-gray)] tracking-tight leading-snug font-medium">
             Don't Just Take Our Word For It—Here's What Our Clients Say
           </p>
         </div>

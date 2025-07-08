@@ -1,16 +1,15 @@
-import AboutUsSection from "../components/about/aboutSection";
-import ConnectButton from "../components/connectButton";
-import ContactForm from "../components/contact/contact";
-import DottedLine from "../components/dottedline";
-import Faq from "../components/Faq/faq";
-import FeaturesSection from "../components/features/featuresSection";
+import AboutUsSection from "../components/aboutSection";
+import ContactForm from "../components/contact";
+import DottedLine from "../ui/dottedline";
+import Faq from "../components/faq";
 import HeroSection from "../components/heroSection";
-import { Navbar } from "../components/navigation/navbar";
-import ProcessComponent from "../components/process/processSection";
-import SectionHeader from "../components/sectionHeader";
-import ServicesSection from "../components/service/servicesSection";
-import ScrollingTestimonials from "../components/testimonials/testimonials";
-import WorksSection from "../components/works/worksSection";
+
+import ScrollingTestimonials from "../components/testimonials";
+import WorksSection from "../components/worksSection";
+import ProcessComponent from "../components/processSection";
+import ServicesSection from "../components/servicesSection";
+import FeaturesSection from "../components/featuresSection";
+import PricingSection from "../components/plans-pricing";
 
 export default function LandingPage() {
   return (
@@ -26,6 +25,7 @@ export default function LandingPage() {
       <WorksSection/>
       <DottedLine className="my-4" />
       <ProcessComponent/>
+      <PricingSection/>
       <ScrollingTestimonials/>
       <Faq/>
       <ContactForm/>

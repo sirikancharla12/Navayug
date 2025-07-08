@@ -1,8 +1,7 @@
 
 import { useState } from "react"
-import DottedLine from "../dottedline"
-import FormButton from "./formButton"
-import VerticalDottedLine from "../verticaldotted"
+import DottedLine from "../ui/dottedline"
+import VerticalDottedLine from "../ui/verticaldotted"
 import { ArrowRight } from "lucide-react"
 
 interface FormData {

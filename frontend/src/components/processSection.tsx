@@ -1,16 +1,15 @@
 
-
-import type React from "react"
-import { Search, Target, Zap } from "lucide-react"
-import ConnectButton from "../connectButton"
-import SectionHeader from "../sectionHeader"
+import type React from "react";
+import { Search, Target, Zap } from "lucide-react";
+import SectionHeader from "../ui/sectionHeader";
+import ConnectButton from "../ui/connectButton";
 
 interface ProcessStep {
-  id: string
-  number: string
-  title: string
-  description: string
-  icon: React.ReactNode
+  id: string;
+  number: string;
+  title: string;
+  description: string;
+  icon: React.ReactNode;
 }
 
 const processSteps: ProcessStep[] = [
@@ -38,10 +37,10 @@ const processSteps: ProcessStep[] = [
       "Our specialists build in sprints, delivering tangible progress at each checkpoint. No black-box workflows.",
     icon: <Zap className="w-8 h-8 text-gray-700" />,
   },
-]
+];
 
 const ProcessCard = ({ step }: { step: ProcessStep }) => (
-  <div className="flex-shrink-0 w-72 sm:w-80 bg-white border border-gray-200 rounded-lg p-6 mr-6 hover:shadow-lg transition-shadow duration-300">
+  <div className="w-full sm:w-80 bg-white border border-gray-200 rounded-lg p-6 mb-6 sm:mb-0 sm:mr-6 hover:shadow-lg transition-shadow duration-300 flex-shrink-0">
     <div className="mb-4">
       <span className="text-sm text-gray-500 font-mono">{step.number}</span>
     </div>
@@ -51,15 +50,14 @@ const ProcessCard = ({ step }: { step: ProcessStep }) => (
       {step.description}
     </p>
   </div>
-)
+);
 
 export default function ProcessComponent() {
-  const duplicatedSteps = [...processSteps, ...processSteps] // Enough for seamless scroll
+  const duplicatedSteps = [...processSteps, ...processSteps];
 
   return (
     <div className="py-16 px-6 sm:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10">
           <div className="flex-1">
             <SectionHeader title="Process" />
@@ -75,8 +73,13 @@ export default function ProcessComponent() {
           </div>
         </div>
 
-        {/* Auto-scroll Cards */}
-        <div className="relative overflow-x-auto scrollbar-hide">
+        <div className="flex flex-col sm:hidden">
+          {processSteps.map((step) => (
+            <ProcessCard key={step.id} step={step} />
+          ))}
+        </div>
+
+        <div className="hidden sm:block relative overflow-x-auto scrollbar-hide">
           <div className="flex animate-scroll">
             {duplicatedSteps.map((step, index) => (
               <ProcessCard key={`${step.id}-${index}`} step={step} />
@@ -99,7 +102,6 @@ export default function ProcessComponent() {
           animation-play-state: paused;
         }
 
-        /* Optional: Hide scrollbar for Webkit browsers */
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
         }
@@ -109,5 +111,5 @@ export default function ProcessComponent() {
         }
       `}</style>
     </div>
-  )
+  );
 }

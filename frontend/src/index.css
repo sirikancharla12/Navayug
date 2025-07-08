@@ -7,19 +7,18 @@
   --color-gray: #6e6e6e;
   --color-light: #f6f6f6;
   --color-soft-gray: #6E6E73;
-  /* --color-light-gray:#848488; */
 }
 
 @font-face {
   font-family: 'DegularDisplay';
-  src: url('/DegularDisplay-Semibold.otf') format('opentype');
+  src: url('/public/fonts/DegularDisplay-Semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'DegularText';
-  src: url('/DegularText-Medium.otf') format('opentype');
+  src: url('/public/fonts/DegularText-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }

@@ -1,5 +1,3 @@
-
-
 type ServiceCardProps = {
   id: string;
   title: string;
@@ -9,11 +7,11 @@ type ServiceCardProps = {
 
 export default function ServiceCard({ id, title, description, image }: ServiceCardProps) {
   return (
-    <div className="bg-[#f6f6f6] p-6 md:p-8 rounded-2xl hover:shadow-lg transition-all duration-300 group cursor-pointer h-[400px] relative overflow-hidden flex flex-col">
-      <div className="text-sm text-[#6E6E73] font-text font-medium mb-2">
+    <div className="bg-[#f6f6f6] px-6 pt-6 md:px-8 md:pt-8 rounded-2xl hover:shadow-lg transition-all duration-300 group cursor-pointer h-[400px] flex flex-col justify-between items-center text-center">
+      
+     <div className="text-sm text-[#6E6E73] font-text font-medium mb-2">
         {id}
       </div>
-
       <div className="flex-1 flex flex-col items-center justify-center text-center px-2">
         <h3 className="text-xl md:text-2xl lg:text-3xl font-display font-medium text-[var(--color-dark)] leading-snug mb-2">
           {title}
@@ -23,7 +21,7 @@ export default function ServiceCard({ id, title, description, image }: ServiceCa
         </p>
       </div>
 
-      <div className="mt-4 flex justify-center">
+      <div className="w-full flex justify-center">
         <img
           src={image || "/placeholder.svg"}
           alt={title}

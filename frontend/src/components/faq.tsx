@@ -1,9 +1,8 @@
 
 import { useState } from "react"
 import { Plus } from "lucide-react"
-import SectionHeader from "../sectionHeader"
-import ConnectButton from "../connectButton"
-import faqDataRaw from "../../constants/utils/faqs.json"
+import SectionHeader from "../ui/sectionHeader"
+import faqDataRaw from "../data/faqs.json"
 
 interface FAQItem {
   id: string
@@ -75,10 +74,10 @@ export default function Faq() {
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-10">
         <div className="text-left">
           <SectionHeader title="FAQ" />
-          <h2 className="text-3xl lg:text-4xl font-display font-semibold text-[var(--color-dark)] mt-2 leading-tight tracking-tight">
+          <h2 className="text-xl lg:text-3xl font-display font-semibold text-[var(--color-dark)] mt-2 leading-tight tracking-tight">
             Clarity Before Commitment
           </h2>
-          <p className="mt-2 text-base lg:text-2xl font-text text-[var(--color-soft-gray)] tracking-tighter leading-tight font-medium">
+          <p className="mt-2 text-base lg:text-xl font-text text-[var(--color-soft-gray)] tracking-tighter leading-tight font-medium">
             Answers To Common Questions About Our Process And Partnerships
           </p>
         </div>
