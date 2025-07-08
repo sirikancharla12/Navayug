@@ -6,7 +6,6 @@ import pricingPlans from "../data/plans-pricing.json";
 export default function PricingSection() {
   return (
     <section className="px-6 md:px-10 lg:px-16 py-20">
-      {/* Header */}
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-12">
         <div className="flex-1">
           <SectionHeader title="PLANS & PRICING" />
@@ -23,19 +22,20 @@ export default function PricingSection() {
         </div>
       </div>
 
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {pricingPlans.map((plan, index) => (
-          <PricingCard
-            key={index}
-            title={plan.title}
-            price={plan.price}
-            currency={plan.currency}
-            period={plan.period}
-            features={plan.features}
-            buttonText={plan.buttonText}
-          />
-        ))}
+      <div className="space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {pricingPlans.slice(0, 4).map((plan, index) => (
+            <PricingCard key={index} {...plan} />
+          ))}
+        </div>
+
+        <div className="flex justify-center flex-wrap gap-4">
+          {pricingPlans.slice(4, 7).map((plan, index) => (
+            <div className="w-full sm:w-[300px] lg:w-[280px]" key={index + 4}>
+              <PricingCard {...plan} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

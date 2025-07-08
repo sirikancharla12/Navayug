@@ -26,9 +26,6 @@ export default function LandingPage() {
       <DottedLine className="my-4" />
       <ProcessComponent/>
       <PricingSection/>
-      <ScrollingTestimonials/>
-      <Faq/>
-      <ContactForm/>
 
     </>
   );
