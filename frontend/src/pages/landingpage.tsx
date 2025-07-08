@@ -1,10 +1,7 @@
 import AboutUsSection from "../components/aboutSection";
-import ContactForm from "../components/contact";
 import DottedLine from "../ui/dottedline";
-import Faq from "../components/faq";
 import HeroSection from "../components/heroSection";
 
-import ScrollingTestimonials from "../components/testimonials";
 import WorksSection from "../components/worksSection";
 import ProcessComponent from "../components/processSection";
 import ServicesSection from "../components/servicesSection";
