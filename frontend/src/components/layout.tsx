@@ -19,7 +19,6 @@ export default function Layout() {
         <Testimonials />
         <DottedLine className="my-4" />
         <Faq />
-        <DottedLine className="my-4" />
 
         <ContactForm />
       </main>

@@ -55,7 +55,7 @@ export default function Testimonials() {
   const duplicatedTestimonials = [...testimonials, ...testimonials]
 
   return (
-    <section className="px-6 md:px-10 lg:px-16 py-20">
+    <section className="px-6 md:px-10 lg:px-16 py-20 w-full max-w-7xl mx-auto">
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-10">
         <div className="flex-1">
           <SectionHeader title="Testimonials" />
