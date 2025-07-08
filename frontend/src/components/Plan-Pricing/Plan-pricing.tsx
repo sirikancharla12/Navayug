@@ -8,7 +8,7 @@ import PricingCard from "./PricingCard";
 export default function PlansComp() {
   return (
     <section className="px-6 md:px-10 lg:px-16 py-20 w-full max-w-7xl mx-auto bg-white">
-      <SectionHeader title="Our Plans" circleColor="var(--color-soft-gray)" />
+      <SectionHeader title="PLANS & PRICING" circleColor="var(--color-soft-gray)" />
 
       {pricingData.map((category) => (
         <div
